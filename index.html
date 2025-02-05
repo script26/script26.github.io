@@ -32,21 +32,45 @@
   <!-- Desktop Information + Alternative Chat -->
   <body>
     <div class="main">
+      
       <footer class="chatalt" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
         <div class="item minnit" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
           <iframe src="https://chat.bzmb.eu" width="100%" height="100%" allowtransparency="no" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;"></iframe>	
         </div>
       </footer>
+      
       <footer class="chatalt" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;height: 100%;">
         <div class="item" id="secondChatServer" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;height: 100%;">
           <iframe src="https://www3.cbox.ws/box/?boxid=3538311&amp;boxtag=KK9MuO" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="position; height: calc(100% - 50px);"></iframe>
         </div>
       </footer>
+      
       <footer class="draw" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none; position: absolute; left: 300px; top: 50px;">
         <div class="item" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
-          <iframe src="https://draw.bzmb.eu" width="1000px" height="1000px" allowtransparency="no" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;"></iframe>	
+          <body>
+
+            <canvas class="whiteboard" width="4400" height="2918"></canvas>
+          
+            <div class="colors">
+              <div class="color black"></div>
+              <div class="color red"></div>
+              <div class="color green"></div>
+              <div class="color blue"></div>
+              <div class="color yellow"></div>
+              <img id="color-eraser" src="/eraser.png" style="width: 48px; position: absolute; left: 260px; height: 48px; top: 0px; border-radius: 25px; background-color: rgba(0, 0, 0, .75);">
+            </div>
+          
+            <button id="wipe-button">Wipe Whiteboard</button>
+          
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="/main.js"></script>
+          
+          
+          </body>
+          <!-- <iframe src="https://draw.bzmb.eu" width="1000px" height="1000px" allowtransparency="no" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;"></iframe>	-->
         </div>
       </footer>
+      
       <div class="sidebars">
         <div class="item opac">
           <div class="desktopblock blockedUsersListClass all">Blocked Users:</div>
