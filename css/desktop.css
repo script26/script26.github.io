@@ -14,7 +14,7 @@
 }
 .backgroundstyles {
  overflow-x: scroll;
- height: 300px;
+ height: calc(100% - 50px);
  width: 100%;
  word-break: break-all;
  text-wrap: wrap;
