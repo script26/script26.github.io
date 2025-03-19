@@ -17,10 +17,15 @@
 
     <link href="/css/style.css" rel="stylesheet">
 
+		<!-- start of chat2 -->
+		<script src="js/chat2/script.js"></script>
+		<link href="/css/chat2/style.css" rel="stylesheet">
+		<!-- end of chat2 -->
+
 		<!-- start of draw2 -->
 		<script src="js/draw2/script.js"></script>
 		<link href="/css/draw2/style.css" rel="stylesheet">
-		<!-- end oo draw2 -->
+		<!-- end of draw2 -->
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="IOGames.fun">
@@ -37,9 +42,10 @@
   <body>
     <div class="main">
 
+			<!-- start of chat 2 -->
       <footer class="chatalt" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
         <div class="item minnit" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none; width: 300px;">
-            <ul class="pages">
+            <!-- <ul class="pages">
               <li class="chat page" style="display: list-item;">
                 
                 <input class="name2" maxlength="50" style="font-family: 'Exo 2';" placeholder="Name" data-username-input="">
@@ -51,13 +57,26 @@
                 <input class="inputMessage" placeholder="Message" style="font-family: 'Exo 2'; font-weight: 400" maxlength="100">
               
               </li>
-            </ul>
+            </ul> -->
+					  <div id="chat2">
+		            <form id="message2">
+		                <input type="text" id="msg2" placeholder="Message" size="58" autofocus />
+		                <input type="submit" id="send2" value="Send" />
+		            </form>
+		            <div id="log2"></div>
+		            <form id="name2">
+		                <input type="text" id="nme2" placeholder="Name" size="58" autofocus />
+		                <div id="colorpicker2" style="background-color: rgb(53, 84, 192);" /></div>
+		            </form>
+		          </div>
+		        </div>
 
-            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
             <script src="/js/chat/socket.io.js"></script>
-            <script src="/js/chat/main.js"></script>
+            <script src="/js/chat/main.js"></script> -->
         </div>
       </footer>
+			<!-- end of chat2 -->
 
       <footer class="chatalt" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;height: 100%;">
         <div class="item" id="secondChatServer" style="scrollbar-color: transparent rgba(255, 255, 255, 0);scrollbar-width: none;height: 100%;">
