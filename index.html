@@ -17,6 +17,11 @@
 
     <link href="/css/style.css" rel="stylesheet">
 
+		<!-- start of draw2 -->
+		<script src="js/draw2/script.js"></script>
+		<link href="/css/draw2/style.css" rel="stylesheet">
+		<!-- end oo draw2 -->
+
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="IOGames.fun">
 
@@ -60,9 +65,11 @@
         </div>
       </footer>
 
+			<!-- start of draw2 -->
+
       <footer class="draw" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none; position: absolute; left: 300px; top: 50px;">
         <div class="item" style="scrollbar-color: transparent rgba(255, 255, 255, 0); scrollbar-width: none;">
-            <body>
+            <!-- <body>
 
               <canvas class="whiteboard" width="1011" height="730"></canvas>
 
@@ -77,12 +84,23 @@
 
               <button id="wipe-button">Wipe Whiteboard</button>
 
-              <script src="/js/draw/socket.io.js"></script>
-              <script src="/js/draw/main.js"></script>
+            </body> -->
 
-            </body>
+						<body>
+
+						  <canvas class="whiteboard"></canvas>
+
+						  <div class="colors">
+						    <div class="colorpicker2"></div>
+						    <i class="fa fa-eraser" id="eraser"></i>
+						    <button id="wipe">Wipe Whiteboard</button>
+						  </div>
+
+						</body>
         </div>
       </footer>
+
+			<!-- end of draw2 -->
 
       <div class="sidebars">
         <div class="item opac">
