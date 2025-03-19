@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let canvas = document.getElementsByClassName("whiteboard")[0];
 	let context = canvas.getContext("2d");
-	let ws = new WebSocket("ws://" + document.location.host + "/ws");
+	let ws = new WebSocket("wss://" + "draw2.bzmb.eu" + "/ws");
 	let pick = document.getElementsByClassName("colorpicker2")[0];
 	let eraserButton = document.getElementById('eraser'); // Eraser
 	let wipeButton = document.getElementById('wipe'); // Wipe
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (window["WebSocket"]) {
 		function establishConnection() {
 			// Establish a WebSocket connection to the server
-			ws = new WebSocket("ws://" + document.location.host + "/ws");
+			ws = new WebSocket("wss://" + "draw2.bzmb.eu" + "/ws");
 
 			// Event handler when open
 			ws.onopen = function(evt) {
