@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	if (window["WebSocket"]) {
 		function establishConnection() {
 			// Establish a WebSocket connection to the server
-			ws = new WebSocket("ws://" + document.location.host + "/ws");
+			ws = new WebSocket("wss://" + "chat2.bzmb.eu" + "/ws");
 
 			// Event handler when open
 			ws.onopen = function(evt) {
