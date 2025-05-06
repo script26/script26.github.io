@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setCookie("color", newColor, 365); // Update the cookie with the new color
     setColor(pick, newColor); // Apply the new color
     current.color = newColor; // Change stroke to new color
-    console.log(`New Color: ${newColor}`);
+    //console.log(`New Color: ${newColor}`);
   };
 
   // Drawing event websocket
